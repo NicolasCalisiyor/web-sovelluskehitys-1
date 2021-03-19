@@ -1,0 +1,42 @@
+h1 {
+    font-size: 4em;
+    font-family: Arial, Verdana, sans-serif;
+}
+body {
+    text-align: center;
+}
+p.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.box {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+}
+.blue {
+    padding: 0px 25px 5px 25px;
+    border-top: 1px solid black;
+    background: #A7D0DD;
+}
+.cloud {
+    padding: 0px 25px 5px 25px;
+    border-top: 1px solid black;
+    background: #FFE2AD;
+}
+.lingo {
+    padding: 0px 25px 5px 25px;
+    border-top: 1px solid black;
+    background: #FF9999;
+    border-bottom: 1px solid black;
+
+}
+div div h2 {
+    font-size: 2em;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+div div p {
+    font-style: italic;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}

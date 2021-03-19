@@ -1,0 +1,27 @@
+table {
+    display: inline-block;
+    border: 1px solid #000;
+}
+thead {
+    background: red;
+    color: white;
+}
+caption {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.middle {
+    background: #F0F0F0;
+}
+p {
+    padding-left: 30px;
+}
+.bold {
+    font-weight: bold;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.prop {
+    font-weight: bold;
+}

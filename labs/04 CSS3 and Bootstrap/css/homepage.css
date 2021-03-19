@@ -1,0 +1,21 @@
+
+h1 {
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    text-align: left;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+img {
+    float: left;
+    padding: 10px;
+    top: 20px;
+    left: 40px;
+    width: 400px;
+}
