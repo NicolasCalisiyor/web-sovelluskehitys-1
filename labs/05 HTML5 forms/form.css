@@ -1,0 +1,15 @@
+fieldset {
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    background: #eaeaea;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.wideBox{
+    width: 300px;
+}
+legend {
+    font-size: 3.0em;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
