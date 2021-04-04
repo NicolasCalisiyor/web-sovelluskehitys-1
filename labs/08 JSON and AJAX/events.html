@@ -19,19 +19,31 @@ window.onload = function() {
 };
 
 function handleClick(e) {
-	var evt = e || window.event;
-	var target;
-	if (evt.target) {
-		target = evt.target;
-	} else {
-		target = evt.srcElement;
-	}
-	alert("You clicked on " + target.id);
+  var evt = e || window.event;
+  var target;
+  if (evt.target) {
+    target = evt.target;
+  } else {
+    target = evt.srcElement;
+  }
+  alert("You clicked on " + target.id);
+}
+function handleMouseover(e) {
+  var evt = e || window.event;
+  var target;
+  if (evt.target) {
+    target = evt.target;
+  } else {
+    target = evt.srcElement;
+  }
+  alert("You moused over on " + target.id);
+
 }
 
   </script>
 </head>
 <body>
 <span id="clickme">Click me!</span>
+<div id="testText" onmouseover="handleMouseover()">Test text!!</div>
 </body>
 </html>

@@ -9,10 +9,19 @@
   <span id="ajaxButton" style="cursor: pointer; text-decoration: underline">
     Make a request
   </span>
-
+<form id="form">
+  URL: <input id="urlInput" type="text"/>
+  <input type="submit" value="Submit this shit" />
+</form>
 
   <script type="text/javascript">
   (function() {
+
+    document.getElementById("form").addEventListener('submit', () => {
+      let url = document.getElementById('urlInput').value;
+      makeRequest(url)
+    });
+
     var httpRequest;
     var testUrl = 'data/story.json';
     // Use Github Gist when no web server is available
