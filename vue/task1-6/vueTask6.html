@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete from list</title>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <h1>To Do List</h1>
+
+        <input type="text" v-model="todo">
+        <input type="submit" value="Add User" @click="saveTodo">
+        <button @click="deleteTodo">Delete First User</button>
+
+        <ol>
+            <li v-for="(todo, index) in todos">
+                {{ todo }}
+
+            </li>
+        </ol>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="vueTask6.js"></script>
+</body>
+</html>
