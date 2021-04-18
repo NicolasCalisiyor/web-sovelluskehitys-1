@@ -10,14 +10,14 @@
         <h1>To Do List</h1>
 
         <input type="text" v-model="todo">
-        <input type="submit" value="Add User" @click="saveTodo">
-        <button @click="deleteTodo">Delete First User</button>
+        <input type="submit" value="Add Todo" @click="saveTodo">
+        <button @click="deleteTodo">Delete First</button>
 
         <ol>
             <li v-for="(todo, index) in todos">
                 {{ todo }}
 
-             <button @click="deleteTodo(index)">Delete User</button>
+             <button @click="deleteTodo(index)">Delete This</button>
             </li>
         </ol>
     </div>

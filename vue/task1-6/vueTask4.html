@@ -11,6 +11,7 @@
 
             <input type="text" v-model="todo">
             <input type="submit" value="Add" @click="saveTodo">
+            <button @click="removeFirst()">Delete First</button>
 
             <ol>
                 <li v-for="(todo, index) in todos">

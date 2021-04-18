@@ -13,6 +13,9 @@ const app = new Vue({
 
         deleteTodo(index) {
             this.todos.splice(index, 1);
+        },
+        removeFirst() {
+            this.todos.shift();
         }
     }
 })
