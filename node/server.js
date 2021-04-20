@@ -1,13 +1,41 @@
 var express = require('express');
 var app = express();
+var mysql = require('mysql');
+var test = "";
 
+    var con = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "Root42",
+        database: "example_db"
+    });
+    (async () => {
+
+        try {
+            con.connect();
+            const someRows = await con.query( ' SELECT * FROM location');
+            console.log(someRows);
+        }catch (err) {
+            //handle error
+        }finally {
+            con.end();
+        }
+
+    })()
+/*
+    con.connect(function(err) {
+        if (err) throw err;
+        con.query("SELECT * FROM location", function (err, result, fields) {
+            if (err) throw err;
+            console.log(result);
+            test = JSON.stringify(result)
+        });
+    });
+*/
 app.get('/', function (req, res) {
-    res.send('Hello World');
+    res.send(test);
 })
 
-var server = app.listen(8081, function () {
-    var host = server.address().address
-    var port = server.address().port
 
-    console.log("Example app listening at http://%s:%s", host, port)
-})
+
+app.listen(3000)
