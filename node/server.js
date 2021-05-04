@@ -9,20 +9,7 @@ var test = "";
         password: "Root42",
         database: "example_db"
     });
-    (async () => {
 
-        try {
-            con.connect();
-            const someRows = await con.query( ' SELECT * FROM location');
-            console.log(someRows);
-        }catch (err) {
-            //handle error
-        }finally {
-            con.end();
-        }
-
-    })()
-/*
     con.connect(function(err) {
         if (err) throw err;
         con.query("SELECT * FROM location", function (err, result, fields) {
@@ -31,7 +18,7 @@ var test = "";
             test = JSON.stringify(result)
         });
     });
-*/
+
 app.get('/', function (req, res) {
     res.send(test);
 })
